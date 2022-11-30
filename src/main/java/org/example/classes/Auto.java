@@ -7,8 +7,8 @@ public class Auto {
     // - field
     // - getter/setter (accessors)
     // reference types:
-    private String kleur = "wit"; // field
-    private String merk = "";
+    private String kleur; // field
+    private String merk;
 
     // primitive types:
     private int snelheid;
@@ -17,19 +17,27 @@ public class Auto {
 
     // Constructor
     public Auto() {
-
+        kleur = "wit";
+        merk = "";
     }
 
     public Auto(String k, int max) {
         this.kleur = k;
         this.maxSnelheid = max;
+        this.merk = "";
     }
 
     // BEHAVIOUR -------------------------------
     public void accelereer() {
-        if (this.snelheid < this.maxSnelheid) {
-            this.snelheid++;
-            // snelheid = snelheid + 1;
+        accelereer(1);
+    }
+
+    // method overloading
+    public void accelereer(int hoeveelheid) {
+        if (this.snelheid + hoeveelheid < this.maxSnelheid) {
+            snelheid = snelheid + hoeveelheid;
+        } else {
+            this.snelheid = this.maxSnelheid;
         }
     }
 
