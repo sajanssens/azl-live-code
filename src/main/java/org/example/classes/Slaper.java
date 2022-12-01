@@ -11,4 +11,9 @@ public class Slaper extends Persoon {
         setLeeftijd(getLeeftijd() + 1);
         System.out.println("Ik ben " + naam + " en ik ben jarig!");
     }
+
+    @Override
+    public void indexeer() {
+        System.out.println("Slaper indexeren...");
+    }
 }

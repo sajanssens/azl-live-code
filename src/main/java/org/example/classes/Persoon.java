@@ -1,6 +1,6 @@
 package org.example.classes;
 
-public abstract class Persoon extends Object {
+public abstract class Persoon implements Indexeerbaar {
     protected String naam;
     private int leeftijd;
     private Auto cooleWaggie;

@@ -2,6 +2,7 @@ package org.example;
 
 import org.example.classes.Auto;
 import org.example.classes.Deelnemer;
+import org.example.classes.Indexeerbaar;
 import org.example.classes.Persoon;
 import org.example.classes.Slaper;
 
@@ -22,7 +23,13 @@ public class Start {
 
         Persoon ray = new Deelnemer("Raymond", 43);
         ray.jarig();
+        ray.indexeer();
+
+        Indexeerbaar z = new Slaper("Zzzzz", 43);
+        z.indexeer();
 
         System.out.println(ray);
+
+        System.out.println("De maximum snelheid op de NLse snelweg is: " + Auto.maxSnelheidOpNlSnelweg);
     }
 }

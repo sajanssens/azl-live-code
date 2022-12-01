@@ -15,6 +15,11 @@ public class Deelnemer extends Persoon {
     }
 
     @Override
+    public void indexeer() {
+        System.out.println("Deelnemer indexeren...");
+    }
+
+    @Override
     public String toString() {
         return "Deelnemer{" +
                 "adv=" + adv.toString() +

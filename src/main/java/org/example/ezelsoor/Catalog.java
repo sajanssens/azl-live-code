@@ -5,7 +5,8 @@ import java.util.List;
 
 public class Catalog {
 
-    private List<Book> books = new ArrayList<>();
+    private ArrayList<Book> books = new ArrayList<Book>();
+    private Book[] bookArray = new Book[100];
 
     public void addBook(Book b) {
         this.books.add(b);

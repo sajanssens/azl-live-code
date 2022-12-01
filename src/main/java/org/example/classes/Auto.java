@@ -15,6 +15,8 @@ public class Auto {
     private int maxSnelheid;
     private boolean heeftBluetooth = true;
 
+    public static final int maxSnelheidOpNlSnelweg = 130;
+
     // Constructor
     public Auto() {
         kleur = "wit";
@@ -43,6 +45,10 @@ public class Auto {
 
     public void wassen() {
         this.kleur = this.kleur + "glans";
+    }
+
+    public static void start() {
+        System.out.println("Vroem vroem... pruttel.. stationair.");
     }
 
     public String getKleur() {
