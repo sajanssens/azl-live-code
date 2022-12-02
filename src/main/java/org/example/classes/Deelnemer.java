@@ -1,11 +1,11 @@
 package org.example.classes;
 
-public class Deelnemer extends Persoon {
+public final class Deelnemer extends Persoon {
 
     private ActiefDienstverband adv;
 
-    public Deelnemer(String naam, int leeftijd) {
-        super(naam, leeftijd);
+    public Deelnemer(String n, int l) {
+        super(n, l);
         this.adv = new ActiefDienstverband();
     }
 
