@@ -15,7 +15,7 @@ fun main() {
         Actor.insert {
             it[firstName] = "Bram"
             it[lastName] = "Janssens"
-            it[dateOfBirth] = LocalDate.parse("1975-10-12")
+            it[dateOfBirth] = LocalDate.parse("1979-08-22")
         }
 
         println(Actor.selectAll())

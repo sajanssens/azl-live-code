@@ -1,0 +1,18 @@
+# download and start docker desktop
+# run this script with `docker compose up`
+
+version: "3.7"
+
+services:
+  mysql:
+    image: mysql:8.0.30
+    volumes:
+      - mysql-data:/var/lib/mysql
+    environment:
+      MYSQL_ROOT_PASSWORD: root
+      MYSQL_DATABASE: exposed
+    ports:
+      - "3306:3306"
+
+volumes:
+  mysql-data:
