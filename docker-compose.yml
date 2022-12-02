@@ -1,5 +1,5 @@
 # download and start docker desktop
-# run this script with `docker compose up`
+# run this script in the terminal with `docker compose up`
 
 version: "3.7"
 
